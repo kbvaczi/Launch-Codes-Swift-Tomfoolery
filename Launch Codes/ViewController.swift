@@ -56,6 +56,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         initializeCountdown()
+        
+        var launchCode = LaunchCode()
+        print(launchCode.displayCode())
+        print(launchCode.displayGuessList())
     }
 
     override func didReceiveMemoryWarning() {
