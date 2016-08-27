@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		BE7F272C1D6723A00035F41D /* LaunchCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F272B1D6723A00035F41D /* LaunchCode.swift */; };
 		BE7F272E1D673D0C0035F41D /* LaunchCodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F272D1D673D0C0035F41D /* LaunchCodesViewController.swift */; };
-		BE7F27321D6BC5EE0035F41D /* LaunchCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F27311D6BC5EE0035F41D /* LaunchCodeButton.swift */; };
+		BE7F27321D6BC5EE0035F41D /* LaunchCodeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F27311D6BC5EE0035F41D /* LaunchCodeButtons.swift */; };
 		BE7F27341D6BD4E70035F41D /* LaunchCodeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F27331D6BD4E70035F41D /* LaunchCodeLabel.swift */; };
 		BEBF36331D5628EB00CFFE51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF36321D5628EB00CFFE51 /* AppDelegate.swift */; };
-		BEBF36351D5628EB00CFFE51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF36341D5628EB00CFFE51 /* ViewController.swift */; };
 		BEBF36381D5628EB00CFFE51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBF36361D5628EB00CFFE51 /* Main.storyboard */; };
 		BEBF363A1D5628EB00CFFE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEBF36391D5628EB00CFFE51 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -20,11 +19,10 @@
 /* Begin PBXFileReference section */
 		BE7F272B1D6723A00035F41D /* LaunchCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCode.swift; sourceTree = "<group>"; };
 		BE7F272D1D673D0C0035F41D /* LaunchCodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCodesViewController.swift; sourceTree = "<group>"; };
-		BE7F27311D6BC5EE0035F41D /* LaunchCodeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCodeButton.swift; sourceTree = "<group>"; };
+		BE7F27311D6BC5EE0035F41D /* LaunchCodeButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCodeButtons.swift; sourceTree = "<group>"; };
 		BE7F27331D6BD4E70035F41D /* LaunchCodeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCodeLabel.swift; sourceTree = "<group>"; };
 		BEBF362F1D5628EB00CFFE51 /* Launch Codes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Launch Codes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBF36321D5628EB00CFFE51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEBF36341D5628EB00CFFE51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEBF36371D5628EB00CFFE51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEBF36391D5628EB00CFFE51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEBF363E1D5628EB00CFFE51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,12 +59,11 @@
 			isa = PBXGroup;
 			children = (
 				BEBF36321D5628EB00CFFE51 /* AppDelegate.swift */,
-				BEBF36341D5628EB00CFFE51 /* ViewController.swift */,
 				BEBF36361D5628EB00CFFE51 /* Main.storyboard */,
 				BE7F27331D6BD4E70035F41D /* LaunchCodeLabel.swift */,
 				BEBF36391D5628EB00CFFE51 /* Assets.xcassets */,
 				BE7F272D1D673D0C0035F41D /* LaunchCodesViewController.swift */,
-				BE7F27311D6BC5EE0035F41D /* LaunchCodeButton.swift */,
+				BE7F27311D6BC5EE0035F41D /* LaunchCodeButtons.swift */,
 				BEBF363E1D5628EB00CFFE51 /* Info.plist */,
 				BE7F272B1D6723A00035F41D /* LaunchCode.swift */,
 			);
@@ -145,12 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBF36351D5628EB00CFFE51 /* ViewController.swift in Sources */,
 				BE7F272C1D6723A00035F41D /* LaunchCode.swift in Sources */,
 				BE7F27341D6BD4E70035F41D /* LaunchCodeLabel.swift in Sources */,
 				BE7F272E1D673D0C0035F41D /* LaunchCodesViewController.swift in Sources */,
 				BEBF36331D5628EB00CFFE51 /* AppDelegate.swift in Sources */,
-				BE7F27321D6BC5EE0035F41D /* LaunchCodeButton.swift in Sources */,
+				BE7F27321D6BC5EE0035F41D /* LaunchCodeButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

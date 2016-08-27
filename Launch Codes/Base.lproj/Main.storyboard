@@ -7,80 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Launch_Codes" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Launch Codes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-b3-5dF">
-                                <frame key="frameInset" minX="16" minY="28" width="343" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
-                                <color key="textColor" red="0.74117647058823533" green="0.020810806279895348" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-wd-mvm">
-                                <frame key="frameInset" minX="16" minY="28" width="320" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess the disarm code!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNG-rl-5FU">
-                                <frame key="frameInset" minX="96" minY="112" width="182" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gf-RK-ZV4">
-                                <frame key="frameInset" minX="150" minY="179" width="75" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.74117647058823533" green="0.020810806279895348" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Guess">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="guessButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NPh-kq-hn7"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="nQ9-rr-R6E">
-                                <frame key="frameInset" minX="16" minY="280" width="343" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwR-iB-UNZ">
-                                <frame key="frameInset" minX="16" minY="236" width="343" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Disarm code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBr-HN-1gz">
-                                <frame key="frameInset" minX="122" minY="141" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="codeEnterTextField" destination="zBr-HN-1gz" id="Quw-M2-gvJ"/>
-                        <outlet property="countdownTimerLabel" destination="nQ9-rr-R6E" id="G92-Z9-UcA"/>
-                        <outlet property="guessResponseLabel" destination="uwR-iB-UNZ" id="L0B-ym-nF8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
-        </scene>
         <!--Launch Codes View Controller-->
         <scene sceneID="3nF-JU-jJb">
             <objects>
@@ -93,185 +19,169 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Codes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f63-r2-epm">
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
-                                <color key="textColor" red="0.74117647060000003" green="0.02081080628" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU8-YY-Em4" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="109" minY="145" width="74.5" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="code 1" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juu-QF-L6W" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSd-fu-xWv" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="191" minY="145" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-Br-yQP" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="274" minY="145" width="74.5" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 1" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juu-QF-L6W" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="26" minY="145" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="code 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU8-YY-Em4" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Codes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="f63-r2-epm">
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.02081080628" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="code 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSd-fu-xWv" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bzD-LM-zHw">
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.02081080628" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="code 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-Br-yQP" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mo-dK-EpB" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mo-dK-EpB" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="26" minY="458" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess1ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="olg-5f-auP"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="g2t-5B-Tdf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANC-kf-sKt" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANC-kf-sKt" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="274.5" minY="458" width="74.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess4ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="doc-2L-Knk"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="bGP-CV-2a2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-r7-rCH" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-r7-rCH" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="109" minY="458" width="74.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess2ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="fhY-1g-llS"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="6Jb-Tu-Hgg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxd-NG-KAK" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxd-NG-KAK" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="191.5" minY="458" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess3ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="6tO-w0-Xok"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="jQ1-Si-qvF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-QS-pcZ" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-QS-pcZ" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="26" minY="500" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess5ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="JQ4-en-cF6"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="MLP-Lk-hjW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N5-tf-JVu" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N5-tf-JVu" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="274.5" minY="500" width="74.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess8ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="TjB-22-Gj7"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="7Zc-fg-r4O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3D-SO-dhp" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3D-SO-dhp" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="109" minY="500" width="74.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess6ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="God-v1-yc1"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="Hyb-H5-i2q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKR-bk-oN7" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKR-bk-oN7" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="191.5" minY="500" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guess7ButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="nl6-SE-DOq"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="dRH-lA-c72"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="60" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="24k-s9-Pwd">
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Possible Code Segments:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-Of-ZAP">
+                                <frame key="frameInset" minX="26" minY="423" width="323" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess code to stop launch:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mug-no-Lk6">
+                                <frame key="frameInset" minX="26" minY="103" width="368" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="f63-r2-epm" firstAttribute="top" secondItem="Ryx-i2-I9V" secondAttribute="bottom" constant="8" id="0HJ-Ya-OZ6"/>
-                            <constraint firstItem="lKR-bk-oN7" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="3Uz-8Z-gsc"/>
-                            <constraint firstItem="mU8-YY-Em4" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="3v4-ee-yeu"/>
-                            <constraint firstItem="nxd-NG-KAK" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="4lH-dD-1el"/>
-                            <constraint firstItem="wSd-fu-xWv" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="4oU-JR-dCV"/>
-                            <constraint firstItem="mU8-YY-Em4" firstAttribute="height" secondItem="Juu-QF-L6W" secondAttribute="height" id="4xK-uY-vCH"/>
-                            <constraint firstItem="wSd-fu-xWv" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="5Zu-Y4-7Ch"/>
-                            <constraint firstItem="n3D-SO-dhp" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="Ash-F3-PzY"/>
-                            <constraint firstItem="x8e-Br-yQP" firstAttribute="top" secondItem="Juu-QF-L6W" secondAttribute="top" id="B29-zV-mnO"/>
-                            <constraint firstItem="nxd-NG-KAK" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="DGz-Mt-Tyv"/>
-                            <constraint firstItem="nxd-NG-KAK" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="FjZ-VT-wlK"/>
-                            <constraint firstItem="9N5-tf-JVu" firstAttribute="width" secondItem="iGN-QS-pcZ" secondAttribute="width" id="Fl2-vo-QfP"/>
-                            <constraint firstItem="6Mo-dK-EpB" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="Gtd-Cf-oxD"/>
-                            <constraint firstItem="eSv-Jv-90E" firstAttribute="top" secondItem="6Mo-dK-EpB" secondAttribute="bottom" constant="175" id="JSF-At-9Sf"/>
-                            <constraint firstItem="ANC-kf-sKt" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="Jdx-1u-lPe"/>
-                            <constraint firstItem="x8e-Br-yQP" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="KbA-5W-hNd"/>
-                            <constraint firstItem="lKR-bk-oN7" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="LmR-y8-1HC"/>
-                            <constraint firstItem="9N5-tf-JVu" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="MKo-cM-fmX"/>
-                            <constraint firstItem="wSd-fu-xWv" firstAttribute="leading" secondItem="mU8-YY-Em4" secondAttribute="trailing" constant="8" symbolic="YES" id="MWf-Qi-Gtq"/>
-                            <constraint firstItem="nxd-NG-KAK" firstAttribute="leading" secondItem="oc5-r7-rCH" secondAttribute="trailing" constant="8" symbolic="YES" id="N4S-5t-tfj"/>
-                            <constraint firstItem="x8e-Br-yQP" firstAttribute="leading" secondItem="wSd-fu-xWv" secondAttribute="trailing" constant="8" symbolic="YES" id="NAm-rf-g8k"/>
-                            <constraint firstItem="ANC-kf-sKt" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="OQ9-KE-BGP"/>
-                            <constraint firstItem="oc5-r7-rCH" firstAttribute="leading" secondItem="6Mo-dK-EpB" secondAttribute="trailing" constant="8" symbolic="YES" id="OWk-ac-EVk"/>
-                            <constraint firstItem="lKR-bk-oN7" firstAttribute="width" secondItem="iGN-QS-pcZ" secondAttribute="width" id="P47-Dh-LRe"/>
-                            <constraint firstItem="wSd-fu-xWv" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="PCu-J7-78X"/>
-                            <constraint firstItem="9N5-tf-JVu" firstAttribute="height" secondItem="iGN-QS-pcZ" secondAttribute="height" id="Q6O-Yo-fNA"/>
-                            <constraint firstItem="9N5-tf-JVu" firstAttribute="top" secondItem="iGN-QS-pcZ" secondAttribute="top" id="QGB-We-lSt"/>
-                            <constraint firstItem="n3D-SO-dhp" firstAttribute="top" secondItem="iGN-QS-pcZ" secondAttribute="top" id="RBH-aB-kGM"/>
-                            <constraint firstItem="wSd-fu-xWv" firstAttribute="top" secondItem="Juu-QF-L6W" secondAttribute="top" id="Rhp-0H-CnY"/>
-                            <constraint firstItem="mU8-YY-Em4" firstAttribute="leading" secondItem="Juu-QF-L6W" secondAttribute="trailing" constant="8" symbolic="YES" id="T1d-fJ-g1k"/>
-                            <constraint firstItem="f63-r2-epm" firstAttribute="leading" secondItem="2NQ-el-218" secondAttribute="leadingMargin" id="UIr-3v-NaT"/>
-                            <constraint firstItem="ANC-kf-sKt" firstAttribute="top" secondItem="6Mo-dK-EpB" secondAttribute="top" id="VuL-uV-0JZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="x8e-Br-yQP" secondAttribute="trailing" constant="10" id="Y99-9H-lVw"/>
-                            <constraint firstItem="x8e-Br-yQP" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="Ykt-tx-YCZ"/>
-                            <constraint firstItem="n3D-SO-dhp" firstAttribute="height" secondItem="iGN-QS-pcZ" secondAttribute="height" id="Znv-hp-5Gb"/>
-                            <constraint firstItem="lKR-bk-oN7" firstAttribute="height" secondItem="iGN-QS-pcZ" secondAttribute="height" id="aoH-Nl-fRp"/>
-                            <constraint firstItem="n3D-SO-dhp" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="bAL-Uk-AOQ"/>
-                            <constraint firstItem="ANC-kf-sKt" firstAttribute="leading" secondItem="nxd-NG-KAK" secondAttribute="trailing" constant="8" symbolic="YES" id="c1R-rX-IY2"/>
-                            <constraint firstItem="mU8-YY-Em4" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="cEv-dq-0jF"/>
-                            <constraint firstItem="x8e-Br-yQP" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="dI5-lb-DQh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ANC-kf-sKt" secondAttribute="trailing" constant="10" id="dTU-5w-aGk"/>
-                            <constraint firstItem="oc5-r7-rCH" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="h88-Gp-Ddy"/>
-                            <constraint firstItem="iGN-QS-pcZ" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="iAb-rB-KNd"/>
-                            <constraint firstItem="Juu-QF-L6W" firstAttribute="leading" secondItem="2NQ-el-218" secondAttribute="leadingMargin" constant="10" id="iVB-OS-qkf"/>
-                            <constraint firstItem="iGN-QS-pcZ" firstAttribute="trailing" secondItem="6Mo-dK-EpB" secondAttribute="trailing" id="jFB-2c-ZE2"/>
-                            <constraint firstItem="oc5-r7-rCH" firstAttribute="top" secondItem="6Mo-dK-EpB" secondAttribute="top" id="kDI-be-LLb"/>
-                            <constraint firstItem="oc5-r7-rCH" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="l0j-mF-08A"/>
-                            <constraint firstItem="iGN-QS-pcZ" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="l4a-SY-URo"/>
-                            <constraint firstItem="n3D-SO-dhp" firstAttribute="leading" secondItem="iGN-QS-pcZ" secondAttribute="trailing" constant="8" symbolic="YES" id="lmY-2R-qM8"/>
-                            <constraint firstItem="mU8-YY-Em4" firstAttribute="top" secondItem="Juu-QF-L6W" secondAttribute="top" id="lrm-Ju-BjV"/>
-                            <constraint firstItem="6Mo-dK-EpB" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="n8p-Wi-Lgu"/>
-                            <constraint firstItem="lKR-bk-oN7" firstAttribute="top" secondItem="iGN-QS-pcZ" secondAttribute="top" id="p1h-Hc-anK"/>
-                            <constraint firstItem="lKR-bk-oN7" firstAttribute="leading" secondItem="n3D-SO-dhp" secondAttribute="trailing" constant="8" symbolic="YES" id="q3t-IW-8gd"/>
-                            <constraint firstItem="oc5-r7-rCH" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="rF3-r0-DQ1"/>
-                            <constraint firstItem="x8e-Br-yQP" firstAttribute="height" secondItem="Juu-QF-L6W" secondAttribute="height" id="sGW-pg-Abw"/>
-                            <constraint firstItem="f63-r2-epm" firstAttribute="trailing" secondItem="2NQ-el-218" secondAttribute="trailingMargin" id="sdB-NQ-mQN"/>
-                            <constraint firstItem="n3D-SO-dhp" firstAttribute="width" secondItem="iGN-QS-pcZ" secondAttribute="width" id="tZk-X9-mrJ"/>
-                            <constraint firstItem="ANC-kf-sKt" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="tp4-Ha-KOD"/>
-                            <constraint firstItem="9N5-tf-JVu" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="uF9-kv-2WV"/>
-                            <constraint firstItem="iGN-QS-pcZ" firstAttribute="leading" secondItem="6Mo-dK-EpB" secondAttribute="leading" id="uUS-SQ-c7X"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="6Mo-dK-EpB" secondAttribute="leading" constant="-10" id="v7z-H0-1S2"/>
-                            <constraint firstItem="Juu-QF-L6W" firstAttribute="top" secondItem="f63-r2-epm" secondAttribute="bottom" constant="47" id="vds-ri-d1X"/>
-                            <constraint firstItem="mU8-YY-Em4" firstAttribute="width" secondItem="Juu-QF-L6W" secondAttribute="width" id="vyn-ju-x70"/>
-                            <constraint firstItem="ANC-kf-sKt" firstAttribute="height" secondItem="6Mo-dK-EpB" secondAttribute="height" id="vyq-K3-maa"/>
-                            <constraint firstItem="wSd-fu-xWv" firstAttribute="height" secondItem="Juu-QF-L6W" secondAttribute="height" id="w9m-cy-L8z"/>
-                            <constraint firstItem="9N5-tf-JVu" firstAttribute="leading" secondItem="lKR-bk-oN7" secondAttribute="trailing" constant="8" symbolic="YES" id="wde-iH-RQi"/>
-                            <constraint firstItem="iGN-QS-pcZ" firstAttribute="top" secondItem="6Mo-dK-EpB" secondAttribute="bottom" constant="8" symbolic="YES" id="whZ-SB-kJX"/>
-                            <constraint firstItem="nxd-NG-KAK" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="xMG-Dg-OLA"/>
-                            <constraint firstItem="oc5-r7-rCH" firstAttribute="width" secondItem="6Mo-dK-EpB" secondAttribute="width" id="y1S-w2-TJB"/>
-                            <constraint firstItem="nxd-NG-KAK" firstAttribute="top" secondItem="6Mo-dK-EpB" secondAttribute="top" id="zWT-AS-EsH"/>
+                            <constraint firstItem="bzD-LM-zHw" firstAttribute="centerX" secondItem="2NQ-el-218" secondAttribute="centerX" id="2G8-Kz-14l"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="centerX" secondItem="2NQ-el-218" secondAttribute="centerX" id="Kb6-wF-VqW"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="top" secondItem="bzD-LM-zHw" secondAttribute="bottom" constant="-22" id="MZx-5X-hYh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="f63-r2-epm" secondAttribute="leading" id="PNy-Fk-lBI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="24k-s9-Pwd" secondAttribute="trailing" constant="10" id="Sjv-AB-fQb"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="centerY" secondItem="2NQ-el-218" secondAttribute="centerY" id="fxg-s3-ZZk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f63-r2-epm" secondAttribute="trailing" id="lDT-RY-RDp"/>
+                            <constraint firstItem="f63-r2-epm" firstAttribute="top" secondItem="Ryx-i2-I9V" secondAttribute="bottom" constant="8" id="lo8-NJ-xaa"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="leading" secondItem="2NQ-el-218" secondAttribute="leadingMargin" constant="10" id="nU7-fe-5Yb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -279,6 +189,8 @@
                         <outlet property="code2Label" destination="mU8-YY-Em4" id="ckc-Jy-Ly7"/>
                         <outlet property="code3Label" destination="wSd-fu-xWv" id="bLx-kF-k4L"/>
                         <outlet property="code4Label" destination="x8e-Br-yQP" id="Dlr-ej-Z94"/>
+                        <outlet property="codeLabelsLabel" destination="mug-no-Lk6" id="jOL-Z2-9pZ"/>
+                        <outlet property="countdownTimerLabel" destination="24k-s9-Pwd" id="Sge-Fb-uBv"/>
                         <outlet property="guess1Button" destination="6Mo-dK-EpB" id="HKs-t7-MVo"/>
                         <outlet property="guess2Button" destination="oc5-r7-rCH" id="zE9-d0-aNl"/>
                         <outlet property="guess3Button" destination="nxd-NG-KAK" id="zc9-hL-isf"/>
@@ -287,11 +199,12 @@
                         <outlet property="guess6Button" destination="n3D-SO-dhp" id="3oR-He-PIX"/>
                         <outlet property="guess7Button" destination="lKR-bk-oN7" id="7Jj-ny-MGE"/>
                         <outlet property="guess8Button" destination="9N5-tf-JVu" id="XkQ-j0-04S"/>
+                        <outlet property="guessButtonsLabel" destination="jl0-Of-ZAP" id="sge-H6-BQS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DH7-Jb-74C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="122.28260869565219"/>
+            <point key="canvasLocation" x="748" y="121.88905547226388"/>
         </scene>
     </scenes>
 </document>
