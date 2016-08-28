@@ -1,84 +1,209 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hAB-ux-o7t">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Launch Codes View Controller-->
+        <scene sceneID="3nF-JU-jJb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Launch_Codes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hAB-ux-o7t" customClass="LaunchCodesViewController" customModule="Launch_Codes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Ryx-i2-I9V"/>
+                        <viewControllerLayoutGuide type="bottom" id="eSv-Jv-90E"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="2NQ-el-218">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Launch Codes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-b3-5dF">
-                                <frame key="frameInset" minX="16" minY="28" width="343" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess code to stop launch:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mug-no-Lk6">
+                                <frame key="frameInset" minX="26" minY="103" width="368" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
-                                <color key="textColor" red="0.74117647058823533" green="0.020810806279895348" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-wd-mvm">
-                                <frame key="frameInset" minX="16" minY="28" width="320" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Possible Code Segments:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-Of-ZAP">
+                                <frame key="frameInset" minX="26" minY="423" width="323" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess the disarm code!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNG-rl-5FU">
-                                <frame key="frameInset" minX="96" minY="112" width="182" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="60" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="24k-s9-Pwd">
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="150"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gf-RK-ZV4">
-                                <frame key="frameInset" minX="150" minY="179" width="75" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKR-bk-oN7" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="191.5" minY="500" width="75" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.74117647058823533" green="0.020810806279895348" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Guess">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="guessButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NPh-kq-hn7"/>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="dRH-lA-c72"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="nQ9-rr-R6E">
-                                <frame key="frameInset" minX="16" minY="280" width="343" height="210"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3D-SO-dhp" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="109" minY="500" width="74.5" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="Hyb-H5-i2q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N5-tf-JVu" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="274.5" minY="500" width="74.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="7Zc-fg-r4O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-QS-pcZ" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="26" minY="500" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="MLP-Lk-hjW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxd-NG-KAK" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="191.5" minY="458" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="jQ1-Si-qvF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-r7-rCH" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="109" minY="458" width="74.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="6Jb-Tu-Hgg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANC-kf-sKt" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="274.5" minY="458" width="74.5" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="bGP-CV-2a2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mo-dK-EpB" customClass="LaunchCodeButton" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="26" minY="458" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.9010853607" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButtonTap:" destination="hAB-ux-o7t" eventType="touchUpInside" id="g2t-5B-Tdf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bzD-LM-zHw">
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.02081080628" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwR-iB-UNZ">
-                                <frame key="frameInset" minX="16" minY="236" width="343" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Codes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="f63-r2-epm">
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.02081080628" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 1" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juu-QF-L6W" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="26" minY="145" width="75" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Disarm code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBr-HN-1gz">
-                                <frame key="frameInset" minX="122" minY="141" width="131" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-Br-yQP" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="274" minY="145" width="74.5" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSd-fu-xWv" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="191" minY="145" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU8-YY-Em4" customClass="LaunchCodeLabel" customModule="Launch_Codes" customModuleProvider="target">
+                                <frame key="frameInset" minX="109" minY="145" width="74.5" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bzD-LM-zHw" firstAttribute="centerX" secondItem="2NQ-el-218" secondAttribute="centerX" id="2G8-Kz-14l"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="centerX" secondItem="2NQ-el-218" secondAttribute="centerX" id="Kb6-wF-VqW"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="top" secondItem="bzD-LM-zHw" secondAttribute="bottom" constant="-22" id="MZx-5X-hYh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="f63-r2-epm" secondAttribute="leading" id="PNy-Fk-lBI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="24k-s9-Pwd" secondAttribute="trailing" constant="10" id="Sjv-AB-fQb"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="centerY" secondItem="2NQ-el-218" secondAttribute="centerY" id="fxg-s3-ZZk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f63-r2-epm" secondAttribute="trailing" id="lDT-RY-RDp"/>
+                            <constraint firstItem="f63-r2-epm" firstAttribute="top" secondItem="Ryx-i2-I9V" secondAttribute="bottom" constant="8" id="lo8-NJ-xaa"/>
+                            <constraint firstItem="24k-s9-Pwd" firstAttribute="leading" secondItem="2NQ-el-218" secondAttribute="leadingMargin" constant="10" id="nU7-fe-5Yb"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="codeEnterTextField" destination="zBr-HN-1gz" id="Quw-M2-gvJ"/>
-                        <outlet property="countdownTimerLabel" destination="nQ9-rr-R6E" id="G92-Z9-UcA"/>
-                        <outlet property="guessResponseLabel" destination="uwR-iB-UNZ" id="L0B-ym-nF8"/>
+                        <outlet property="code1Label" destination="Juu-QF-L6W" id="bYD-Nl-xGE"/>
+                        <outlet property="code2Label" destination="mU8-YY-Em4" id="ckc-Jy-Ly7"/>
+                        <outlet property="code3Label" destination="wSd-fu-xWv" id="bLx-kF-k4L"/>
+                        <outlet property="code4Label" destination="x8e-Br-yQP" id="Dlr-ej-Z94"/>
+                        <outlet property="codeLabelsLabel" destination="mug-no-Lk6" id="jOL-Z2-9pZ"/>
+                        <outlet property="countdownTimerLabel" destination="24k-s9-Pwd" id="Sge-Fb-uBv"/>
+                        <outlet property="guess1Button" destination="6Mo-dK-EpB" id="HKs-t7-MVo"/>
+                        <outlet property="guess2Button" destination="oc5-r7-rCH" id="zE9-d0-aNl"/>
+                        <outlet property="guess3Button" destination="nxd-NG-KAK" id="zc9-hL-isf"/>
+                        <outlet property="guess4Button" destination="ANC-kf-sKt" id="YND-Sl-Auy"/>
+                        <outlet property="guess5Button" destination="iGN-QS-pcZ" id="1Z0-o3-L7m"/>
+                        <outlet property="guess6Button" destination="n3D-SO-dhp" id="3oR-He-PIX"/>
+                        <outlet property="guess7Button" destination="lKR-bk-oN7" id="7Jj-ny-MGE"/>
+                        <outlet property="guess8Button" destination="9N5-tf-JVu" id="XkQ-j0-04S"/>
+                        <outlet property="guessButtonsLabel" destination="jl0-Of-ZAP" id="sge-H6-BQS"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DH7-Jb-74C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
+            <point key="canvasLocation" x="748" y="121.88905547226388"/>
         </scene>
     </scenes>
 </document>
