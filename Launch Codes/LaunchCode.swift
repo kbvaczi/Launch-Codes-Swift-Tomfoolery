@@ -17,7 +17,7 @@ class LaunchCode {
     var guessListLength = 8
     
     
-    let dictionaryList = ["tower", "x-ray", "alpha", "tree", "dog", "cat", "wolf", "omega", "bird", "zulu", "tango", "romeo", "trap", "park", "blow"]
+    let dictionaryList = ["Tower", "X-ray", "Alpha", "Tree", "Dog", "Cat", "Wolf", "Omega", "Bird", "Tango", "Romeo", "Trap", "Park", "Blow", "Kilo", "Echo", "Alpha", "India", "Zulu", "Victor", "Golf", "Delta", "Granny", "Farce", "Gooey", "Up", "Below", "Jump", "Mouse", "Grass", "Smell", "Funny", "Gross", "Tarp", "Body", "Hand", "Spray", "Boss", "Shock", "Roll"]
     
     init() {
         code = []

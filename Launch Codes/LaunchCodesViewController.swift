@@ -10,6 +10,7 @@ import UIKit
 
 class LaunchCodesViewController: UIViewController {
     
+    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var codeLabelsLabel: UILabel!
     @IBOutlet weak var code1Label: LaunchCodeLabel!
     @IBOutlet weak var code2Label: LaunchCodeLabel!
@@ -113,13 +114,45 @@ class LaunchCodesViewController: UIViewController {
     func winGame() {
         print("congratulations you won")
         countdown.invalidate()
-        resetLaunchCode()
+        
+        let alertTitle = "Congratulations"
+        let alertMessage = "You stopped the launch!"
+        
+        let delayTime = DispatchTime.now() + .seconds(1)
+        DispatchQueue.main.asyncAfter(deadline: delayTime) {
+            self.displayEndGameAlert(title: alertTitle, message: alertMessage)
+            self.resetLaunchCode()
+        }
     }
     
     func loseGame() {
         print("congratulations you lost")
         countdown.invalidate()
+        
+        let randomCityList = ["Austin", "Houston", "Dallas", "Pheonix", "Pensacola", "Sacramento", "Moscow", "Sydney", "Burmingham", "Mexico City", "Cancun", "Budapest", "Paris", "Rio de Janeiro", "Sao Paulo", "Boston", "New York", "London", "Tokyo", "Beijing"]
+        let randomCityBeingDestroyed = randomCityList[Int(arc4random_uniform(UInt32(randomCityList.count)))]
+        
+        let randomInsultList = ["Sleeping on the job?", "Crap!", "You call that codebreaking?", "My grandma can crack codes better than you"]
+        let randomInsult = randomInsultList[Int(arc4random_uniform(UInt32(randomInsultList.count)))]
+        
+        let alertTitle = randomInsult
+        let alertMessage = "You let \(randomCityBeingDestroyed) get blown up!"
+        
+        displayEndGameAlert(title: alertTitle, message: alertMessage)
         resetLaunchCode()
+    }
+    
+    func displayEndGameAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "War Never Stops", style: UIAlertActionStyle.default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        
+        let delayTime = DispatchTime.now() + .seconds(10)
+        DispatchQueue.main.asyncAfter(deadline: delayTime) {
+            print("dismissing alert")
+            alert.dismiss(animated: true, completion: nil)
+        }
     }
     
     func decreaseCountdown() {
@@ -176,21 +209,24 @@ class LaunchCodesViewController: UIViewController {
     }
     
     func arrangeLayout () {
-        let buttonWidth = (self.view.frame.width / CGFloat(code.guessListLength + 2)) * 2
+        let usuableViewWidth = self.view.frame.width - self.view.layoutMargins.left - self.view.layoutMargins.right
+        let buttonWidth = (usuableViewWidth / CGFloat(code.guessListLength + 2)) * 2
         let buttonHeight = CGFloat((guess1Button.titleLabel?.font.lineHeight)!) * 1.5
-        let buttonSpacingX = (self.view.frame.width - buttonWidth * CGFloat(code.guessListLength / 2)) / CGFloat(code.guessListLength / 2 + 1)
+        let buttonSpacingX = (usuableViewWidth - buttonWidth * CGFloat(code.guessListLength / 2)) / CGFloat(code.guessListLength / 2 - 1)
         let firstRowSpacingY = self.view.frame.height - buttonHeight * 5
         let secondRowSpacingY = firstRowSpacingY + buttonHeight * 1.5
         for (index, button) in guessButtons[0...3].enumerated() {
-            button.frame = CGRect(x: (buttonSpacingX + buttonWidth) * CGFloat(index) + buttonSpacingX, y: firstRowSpacingY, width: buttonWidth, height: buttonHeight)
+            button.frame = CGRect(x: (buttonSpacingX + buttonWidth) * CGFloat(index) + self.view.layoutMargins.left, y: firstRowSpacingY, width: buttonWidth, height: buttonHeight)
         }
         for (index, button) in guessButtons[4...7].enumerated() {
-            button.frame = CGRect(x: (buttonSpacingX + buttonWidth) * CGFloat(index) + buttonSpacingX, y: secondRowSpacingY, width: buttonWidth, height: buttonHeight)
+            button.frame = CGRect(x: (buttonSpacingX + buttonWidth) * CGFloat(index) + self.view.layoutMargins.left, y: secondRowSpacingY, width: buttonWidth, height: buttonHeight)
         }
         let codeSpacingY = buttonHeight * 4
         for (index, label) in codeLabels[0...3].enumerated() {
-            label.frame = CGRect(x: (buttonSpacingX + buttonWidth) * CGFloat(index) + buttonSpacingX, y: codeSpacingY, width: buttonWidth, height: buttonHeight)
+            label.frame = CGRect(x: (buttonSpacingX + buttonWidth) * CGFloat(index) + self.view.layoutMargins.left, y: codeSpacingY, width: buttonWidth, height: buttonHeight)
             label.backgroundColor = nil
+            label.layer.borderColor = UIColor.darkGray.cgColor
+            label.layer.borderWidth = 1.0
         }
         guessButtonsLabel.frame = CGRect(x: buttonSpacingX, y: firstRowSpacingY - buttonHeight, width: self.view.frame.width, height: buttonHeight)
         codeLabelsLabel.frame = CGRect(x: buttonSpacingX, y: codeSpacingY - buttonHeight, width: self.view.frame.width, height: buttonHeight)
@@ -199,6 +235,10 @@ class LaunchCodesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         resetLaunchCode()
     }
     

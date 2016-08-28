@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE62C65E1D730F2200B6823F /* ViewFromTownLake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE62C65D1D730F2200B6823F /* ViewFromTownLake.jpg */; };
 		BE7F272C1D6723A00035F41D /* LaunchCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F272B1D6723A00035F41D /* LaunchCode.swift */; };
 		BE7F272E1D673D0C0035F41D /* LaunchCodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F272D1D673D0C0035F41D /* LaunchCodesViewController.swift */; };
 		BE7F27321D6BC5EE0035F41D /* LaunchCodeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F27311D6BC5EE0035F41D /* LaunchCodeButtons.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE62C65D1D730F2200B6823F /* ViewFromTownLake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ViewFromTownLake.jpg; sourceTree = "<group>"; };
 		BE7F272B1D6723A00035F41D /* LaunchCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCode.swift; sourceTree = "<group>"; };
 		BE7F272D1D673D0C0035F41D /* LaunchCodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCodesViewController.swift; sourceTree = "<group>"; };
 		BE7F27311D6BC5EE0035F41D /* LaunchCodeButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCodeButtons.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				BE7F27311D6BC5EE0035F41D /* LaunchCodeButtons.swift */,
 				BEBF363E1D5628EB00CFFE51 /* Info.plist */,
 				BE7F272B1D6723A00035F41D /* LaunchCode.swift */,
+				BE62C65D1D730F2200B6823F /* ViewFromTownLake.jpg */,
 			);
 			path = "Launch Codes";
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			files = (
 				BEBF363A1D5628EB00CFFE51 /* Assets.xcassets in Resources */,
 				BEBF36381D5628EB00CFFE51 /* Main.storyboard in Resources */,
+				BE62C65E1D730F2200B6823F /* ViewFromTownLake.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
