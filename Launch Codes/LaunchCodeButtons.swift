@@ -45,7 +45,7 @@ class LaunchCodeButton: UIButton {
             return true
         }
         print("not at origin")
-        print(self.originPoint)
+        print(String(describing: self.originPoint))
         return false
     }
     
